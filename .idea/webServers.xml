@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="4c5ffce0-708a-4461-b157-5072470e33b4" name="youcodeWorkshopsInPlaceServer" url="http://localhost:9999/">
+        <fileTransfer mountedRoot="D:\Youcode\workshoops" accessType="MOUNT" port="0" />
+      </webServer>
+    </option>
+  </component>
+</project>
