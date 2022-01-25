@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="css/payments.css">
 </head>
 <body>
+<pre>
+
+</pre>
 <main class="container-fluid bg-gray">
     <div class="row">
         <?php include 'sidebar.php';?>
@@ -45,15 +48,7 @@
             <div class="col-12 cards">
                 <?php
                 // let's fill the array with the payments data
-                for($i=1;$i<=10;$i++)
-                    $payments[]=array(
-                        'name'=>'name '.$i,
-                        'paymentSchudule'=>$i.($i==1?'st':($i==2?'nd':($i==3?'rd':'th'))),
-                        'billNumber'=>$i+10000,
-                        'amountPaid'=>1000+$i,
-                        'balanceAmount'=>1000*$i,
-                        'date'=>$i.'-Dec, 2021s'
-                    );
+                    $payments=json_decode(file_get_contents('data/payments.json'),true);
                 // now let's print the data
                 foreach($payments as $payment){
                 ?>
@@ -86,11 +81,13 @@
                     </div>
                 </div>
                 <?php }?>
-
             </div>
         </div>
     </div>
 </main>
+<?php
+
+;?>
 <?php include 'footer.php'?>
 </body>
 </html>

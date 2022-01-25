@@ -39,18 +39,14 @@
                     </span>
                 </div>
                 <div class="row col-12 cards">
+                    <pre>
                     <?php
                     // let's fill the array with the students data
-                    for($i=1;$i<=10;$i++)
-                        $students[]=array(
-                            'name'=>'name '.$i,
-                            'email'=>'name'.$i.'@domain.ext',
-                            'phone'=>'212677886655',
-                            'enrolNbr'=>1000+$i,
-                            'dateAdmission'=>$i.'-Dec, 2021s');
+                        $students=json_decode(file_get_contents('data/students.json'),true);
                     // now let's print the data
                     foreach($students as $student){
                     ?>
+                    </pre>
                     <div class="col-12">
                          <div class="card shadow">
                         <div class="card-body d-flex flex-column flex-md-row">
