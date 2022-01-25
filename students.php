@@ -39,14 +39,12 @@
                     </span>
                 </div>
                 <div class="row col-12 cards">
-                    <pre>
                     <?php
                     // let's fill the array with the students data
                         $students=json_decode(file_get_contents('data/students.json'),true);
                     // now let's print the data
                     foreach($students as $student){
                     ?>
-                    </pre>
                     <div class="col-12">
                          <div class="card shadow">
                         <div class="card-body d-flex flex-column flex-md-row">
@@ -78,7 +76,6 @@
                     </div>
                     </div>
                     <?php }?>
-
             </div>
             </div>
         </div>

@@ -9,9 +9,6 @@
     <link rel="stylesheet" href="css/payments.css">
 </head>
 <body>
-<pre>
-
-</pre>
 <main class="container-fluid bg-gray">
     <div class="row">
         <?php include 'sidebar.php';?>
@@ -21,7 +18,7 @@
                 <div class="col-12 main-content-toolbar d-flex pb-2 justify-content-between align-items-center border-bottom-light">
                     <h1 class="h4 fw-bold">Payment Details</h1>
                     <div class="toolbar-left-part">
-                        <button class="sort ic ic-sort btn btn-sort" title="sort button"></button>
+                        <a class="sort ic ic-sort btn btn-sort" title="sort button"></a>
                     </div>
                 </div>
             </div>
@@ -47,10 +44,10 @@
             </div>
             <div class="col-12 cards">
                 <?php
-                // let's fill the array with the payments data
+                    // let's fill the array with the payments data
                     $payments=json_decode(file_get_contents('data/payments.json'),true);
-                // now let's print the data
-                foreach($payments as $payment){
+                    // now let's print the data
+                    foreach($payments as $payment){
                 ?>
                 <div class="col-12">
                     <div class="card">
@@ -74,8 +71,8 @@
                                  <?php echo $payment['date'];?>
                             </span>
                             <span class="col-lg-1 btns">
-                                <button class="ic ic-eye btn btn-details" title="details button">
-                                </button>
+                                <a class="ic ic-eye btn btn-details" title="details button">
+                                </a>
                             </span>
                         </div>
                     </div>
