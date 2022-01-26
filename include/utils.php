@@ -4,7 +4,7 @@
  */
 define('FILE_MODE','CSV');
 
-/***
+/**
  * @param string $json_file_name
  * @return array an associative array containing loaded data from the json file
  */
@@ -45,6 +45,11 @@ function getStudentsData():array{
     }
     else return array();
 }
+
+/**
+ * used to retreive payments's data from the data
+ * @return array
+ */
 function getPaymentsData():array{
     if(constant('FILE_MODE')=='JSON'){
         return loadAndDecodeJsonFile('data/payments.json');
