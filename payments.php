@@ -1,3 +1,6 @@
+<?php
+require_once 'include/utils.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -45,7 +48,7 @@
             <div class="col-12 cards">
                 <?php
                     // let's fill the array with the payments data
-                    $payments=json_decode(file_get_contents('data/payments.json'),true);
+                    $payments=getPaymentsData();
                     // now let's print the data
                     foreach($payments as $payment){
                 ?>
@@ -82,9 +85,6 @@
         </div>
     </div>
 </main>
-<?php
-
-;?>
 <?php include 'footer.php'?>
 </body>
 </html>
