@@ -1,3 +1,6 @@
+<?php
+require_once 'include/utils.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,7 +21,7 @@
                 <div class="col-12 main-content-toolbar d-flex pb-2 justify-content-between align-items-center border-bottom-light">
                     <h1 class="h4 fw-bold">Payment Details</h1>
                     <div class="toolbar-left-part">
-                        <button class="sort ic ic-sort btn btn-sort" title="sort button"></button>
+                        <a class="sort ic ic-sort btn btn-sort" title="sort button"></a>
                     </div>
                 </div>
             </div>
@@ -44,18 +47,10 @@
             </div>
             <div class="col-12 cards">
                 <?php
-                // let's fill the array with the payments data
-                for($i=1;$i<=10;$i++)
-                    $payments[]=array(
-                        'name'=>'name '.$i,
-                        'paymentSchudule'=>$i.($i==1?'st':($i==2?'nd':($i==3?'rd':'th'))),
-                        'billNumber'=>$i+10000,
-                        'amountPaid'=>1000+$i,
-                        'balanceAmount'=>1000*$i,
-                        'date'=>$i.'-Dec, 2021s'
-                    );
-                // now let's print the data
-                foreach($payments as $payment){
+                    // let's fill the array with the payments data
+                    $payments=getPaymentsData();
+                    // now let's print the data
+                    foreach($payments as $payment){
                 ?>
                 <div class="col-12">
                     <div class="card">
@@ -79,14 +74,13 @@
                                  <?php echo $payment['date'];?>
                             </span>
                             <span class="col-lg-1 btns">
-                                <button class="ic ic-eye btn btn-details" title="details button">
-                                </button>
+                                <a class="ic ic-eye btn btn-details" title="details button">
+                                </a>
                             </span>
                         </div>
                     </div>
                 </div>
                 <?php }?>
-
             </div>
         </div>
     </div>
