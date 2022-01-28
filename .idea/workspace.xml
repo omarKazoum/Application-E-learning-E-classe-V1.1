@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="17ad38d9-dd66-454c-ba14-09671b334e25" name="Changes" comment="started working on crud operations">
+      <change beforePath="$PROJECT_DIR$/include/utils.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/utils.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="develop" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="PhpServers">
+    <servers>
+      <server host="localhost" id="373922fb-5fe2-41b6-b85b-7c5b9343acec" name="build in" port="9999" />
+    </servers>
+  </component>
+  <component name="ProjectId" id="24BZeCoiCZHsqvuApcXJFoa9elS" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="sortByType" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/data" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Youcode\workshoops\E-LEARNING APPLICATION V1.1 E-Classe\data" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="php debug" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" singleton="false" server_name="build in">
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="17ad38d9-dd66-454c-ba14-09671b334e25" name="Changes" comment="" />
+      <created>1643106039583</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1643106039583</updated>
+      <workItem from="1643106046816" duration="11757000" />
+      <workItem from="1643150243798" duration="20280000" />
+      <workItem from="1643225912014" duration="898000" />
+      <workItem from="1643291024186" duration="27000" />
+      <workItem from="1643357878519" duration="2798000" />
+    </task>
+    <task id="LOCAL-00001" summary="migrated to using json files to load students and payments data">
+      <created>1643115808492</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1643115808492</updated>
+    </task>
+    <task id="LOCAL-00002" summary="removed some useless tags">
+      <created>1643120274141</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1643120274141</updated>
+    </task>
+    <task id="LOCAL-00003" summary="removed some useless tags">
+      <created>1643120317185</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1643120317185</updated>
+    </task>
+    <task id="LOCAL-00004" summary="added csv support for reading data">
+      <created>1643199272737</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1643199272737</updated>
+    </task>
+    <task id="LOCAL-00005" summary="added a comment for a util function">
+      <created>1643206230396</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1643206230396</updated>
+    </task>
+    <task id="LOCAL-00006" summary="started working on crud operations">
+      <created>1643359604967</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1643359604967</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="migrated to using json files to load students and payments data" />
+    <MESSAGE value="removed some useless tags" />
+    <MESSAGE value="added csv support for reading data" />
+    <MESSAGE value="added a comment for a util function" />
+    <MESSAGE value="started working on crud operations" />
+    <option name="LAST_COMMIT_MESSAGE" value="started working on crud operations" />
+  </component>
+</project>

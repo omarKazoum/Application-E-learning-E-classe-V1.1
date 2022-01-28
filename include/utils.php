@@ -97,14 +97,18 @@ function addStudentInCSV(array $studentData){
 
 }
 /**
+ * takes post data and adds astudent with it or shows an error
  * @param array $studentData an array containing the student data
  * @return bool weather the opertaion was successfull or not
  */
-function addStudent(){
+function addStudentFromPostFields(){
     global $STUDENT_NAME,$STUDENT_EMAIL,$STUDENT_PHONE;
     $studentFields=array($STUDENT_NAME,$STUDENT_EMAIL,$STUDENT_PHONE);
     if(areAllFieldsSet($studentFields,'POST')){
-
+        //add the student here
+    }else{
+        //not all data has been supplied
+        die("<h1 color='red'>not all fields have been supplied !</h1>");
     }
 }
 function areAllFieldsSet(array $fields,string $method) :bool{
