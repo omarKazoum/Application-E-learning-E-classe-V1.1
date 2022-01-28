@@ -1,5 +1,4 @@
 <?php
-define('ACTION_ADD_STUDENT','ACTION_ADD_STUDENT');
 require_once 'include/utils.php';
 
 ?>
@@ -23,7 +22,7 @@ require_once 'include/utils.php';
                     <h1 class="h5 fw-bold">Students List</h1>
                     <div class="toolbar-left-part">
                         <button class="sort ic ic-sort btn btn-sort" title="sort button"></button>
-                        <a class="btn btn-primary btn-add-students" title="add student button" >ADD NEW STUDENT</a>
+                        <button class="btn btn-primary btn-add-students" title="add student button" data-toggle="modal" data-target="#add-student-modal" >ADD NEW STUDENT</button>
                     </div>
                 </div>
                 <div class="table-header row mb-2 d-none d-lg-flex">
@@ -53,7 +52,7 @@ require_once 'include/utils.php';
                     <div class="col-12">
                          <div class="card shadow">
                         <div class="card-body d-flex flex-column flex-md-row">
-                            <span class="col-lg-1 col-auto">
+                            <span class="col-md-1 col-auto">
                                 <img src="images/student-img.jfif" alt="" class="w-100">
                             </span>
                             <span class="col-lg-2 text-start">
@@ -86,6 +85,32 @@ require_once 'include/utils.php';
         </div>
     </div>
 </main>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
 <?php include 'footer.php'?>
+
 </body>
 </html>
