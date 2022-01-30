@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="964a304b-d6a3-450f-b594-f828d39be672" name="Changes" comment="started working on crud operations">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="213a4a58-1521-4409-899e-ab72716e2550" name="Changes" comment="started working on add student but found a bug">
+      <change afterPath="$PROJECT_DIR$/student_delete.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/student.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/student.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/students.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/studentsCount" beforeDir="false" afterPath="$PROJECT_DIR$/data/studentsCount" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/utils.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/utils.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/students.php" beforeDir="false" afterPath="$PROJECT_DIR$/students.php" afterDir="false" />
     </list>
@@ -30,6 +34,14 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -67,7 +79,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="17ad38d9-dd66-454c-ba14-09671b334e25" name="Changes" comment="" />
+      <changelist id="213a4a58-1521-4409-899e-ab72716e2550" name="Changes" comment="started working on add student but found a bug" />
       <created>1643106039583</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -77,6 +89,9 @@
       <workItem from="1643225912014" duration="898000" />
       <workItem from="1643291024186" duration="27000" />
       <workItem from="1643357878519" duration="2798000" />
+      <workItem from="1643467271300" duration="1390000" />
+      <workItem from="1643471665415" duration="2183000" />
+      <workItem from="1643551678604" duration="2536000" />
     </task>
     <task id="LOCAL-00001" summary="migrated to using json files to load students and payments data">
       <created>1643115808492</created>
@@ -120,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643359604967</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="started working on add student but found a bug">
+      <created>1643421296667</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1643421296667</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -143,6 +165,8 @@
     <MESSAGE value="added csv support for reading data" />
     <MESSAGE value="added a comment for a util function" />
     <MESSAGE value="started working on crud operations" />
-    <option name="LAST_COMMIT_MESSAGE" value="started working on crud operations" />
+    <MESSAGE value="add student option is added" />
+    <MESSAGE value="started working on add student but found a bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="started working on add student but found a bug" />
   </component>
 </project>
