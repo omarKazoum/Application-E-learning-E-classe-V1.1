@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="213a4a58-1521-4409-899e-ab72716e2550" name="Changes" comment="started working on add student but found a bug">
-      <change afterPath="$PROJECT_DIR$/student_delete.php" afterDir="false" />
+    <list default="true" id="213a4a58-1521-4409-899e-ab72716e2550" name="Changes" comment="now add student and delete student are working">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/student.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/student.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/students.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/studentsCount" beforeDir="false" afterPath="$PROJECT_DIR$/data/studentsCount" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/utils.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/utils.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/students.php" beforeDir="false" afterPath="$PROJECT_DIR$/students.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,11 +40,14 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="PhpDebugGeneral" zd_debug_port="9000" />
   <component name="PhpServers">
     <servers>
       <server host="localhost" id="373922fb-5fe2-41b6-b85b-7c5b9343acec" name="build in" port="9999" />
     </servers>
   </component>
+  <component name="PhpWebServerValidation" deployment_server_id="95a7abcb-d6af-4bf6-8836-b321b3289d3a" path_to_validation_script="D:\Youcode\workshoops\E-LEARNING APPLICATION V1.1 E-Classe" selected_validation_type="LOCAL" web_path_to_validation_script="http://localhost:9999/" />
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.4" />
   <component name="ProjectId" id="24BZeCoiCZHsqvuApcXJFoa9elS" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -64,7 +61,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/data" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.debug" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -91,7 +88,10 @@
       <workItem from="1643357878519" duration="2798000" />
       <workItem from="1643467271300" duration="1390000" />
       <workItem from="1643471665415" duration="2183000" />
-      <workItem from="1643551678604" duration="2536000" />
+      <workItem from="1643551678604" duration="3275000" />
+      <workItem from="1643581057367" duration="2130000" />
+      <workItem from="1643583851025" duration="645000" />
+      <workItem from="1643584845596" duration="3657000" />
     </task>
     <task id="LOCAL-00001" summary="migrated to using json files to load students and payments data">
       <created>1643115808492</created>
@@ -142,7 +142,21 @@
       <option name="project" value="LOCAL" />
       <updated>1643421296667</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="started working on delete student option and found some challenges">
+      <created>1643556825243</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1643556825243</updated>
+    </task>
+    <task id="LOCAL-00009" summary="now add student and delete student are working">
+      <created>1643588451754</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1643588451754</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,6 +181,88 @@
     <MESSAGE value="started working on crud operations" />
     <MESSAGE value="add student option is added" />
     <MESSAGE value="started working on add student but found a bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="started working on add student but found a bug" />
+    <MESSAGE value="started working on delete student option and found some challenges" />
+    <MESSAGE value="now add student and delete student are working" />
+    <option name="LAST_COMMIT_MESSAGE" value="now add student and delete student are working" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/include/utils.php</url>
+          <line>155</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/include/utils.php</url>
+          <line>159</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/include/utils.php</url>
+          <line>163</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/student_delete.php</url>
+          <line>5</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/student_delete.php</url>
+          <line>4</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/include/utils.php</url>
+          <line>156</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/include/utils.php</url>
+          <line>157</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/include/utils.php</url>
+          <line>160</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/include/utils.php</url>
+          <line>161</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/include/utils.php</url>
+          <line>166</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/include/utils.php</url>
+          <line>168</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/include/utils.php</url>
+          <line>167</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/include/utils.php</url>
+          <line>169</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/include/utils.php</url>
+          <line>171</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

@@ -70,7 +70,7 @@ function getStudentsData():array{
  */
 function getPaymentsData():array{
     if(constant('FILE_MODE')=='JSON'){
-        return loadAndDecodeJsonFile($GLOBALS['$PAYMENTS_JSON_FILE']);
+        return loadAndDecodeJsonFile($GLOBALS['PAYMENTS_JSON_FILE']);
     }elseif(constant('FILE_MODE')=='CSV'){
 
         $csvArray=loadAndDecodeCSVFIle('data/payments.csv');
@@ -155,7 +155,7 @@ function deleteStudent($id){
     if(constant('FILE_MODE')=='JSON'){
         global  $STUDENTS_JSON_FILE_PATH,$STUDENT_ID;
         $students=loadAndDecodeJsonFile($STUDENTS_JSON_FILE_PATH);
-        $index=false;
+        $index=-1;
         foreach ($students as $k => $v){
             if($v[$STUDENT_ID]==$id) {
                 $index =$k;
@@ -163,7 +163,7 @@ function deleteStudent($id){
                 break;
             }
         }
-        if($index!=false){
+        if($index!=-1){
             echo '<br>students length before:'.count($students);
             unset($students[$index]);
             echo '<br>students length after:'.count($students);

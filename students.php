@@ -12,6 +12,7 @@ $USER_ADD_NOT_SET=false;
 $USER_ADD_KEY='user-add';
 $user_add_result=isset($_GET[$USER_ADD_KEY])?$_GET[$USER_ADD_KEY]:$USER_ADD_NOT_SET;
 
+$user_delete_key='user_delete';
 if($action==$ACTION_ADD_SUBMIT) {
     if (areAllSuserAddFieldsSetAndValid()) {
         addStudentFromPostFields();
@@ -54,6 +55,15 @@ if($action==$ACTION_ADD_SUBMIT) {
                         Student is added successfully !
                     </p>
                 <?php }?>
+                <?php
+                    if(isset($_GET["$user_delete_key"])){
+                        ?>
+                        <p class="alert alert-success">
+                            Student is deleted successfully !
+                        </p>
+                <?php
+                    }
+                ?>
                 <div class="table-header row mb-2 d-none d-lg-flex">
                     <span class="offset-1 col-2 text-start">
                         Name
